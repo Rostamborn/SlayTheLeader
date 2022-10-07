@@ -8,5 +8,10 @@ in order to solve it:
 pip install pygame
 
 * How to play the game?
-simply go to the directory in which you've cloned the repo and type:
+simply go tothe directory in which you've cloned the repo and type:
+
+Linux/MacOs:
 python -m Boom
+
+Windows:
+py -m Boom
