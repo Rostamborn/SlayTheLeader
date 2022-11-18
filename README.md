@@ -1,17 +1,11 @@
-Boom is a game about booming buncha pacman ghosts!
+#SlayTheLeader
+this is a game about clicking and destroying targets with 
+your mouse!
 
-clone the repo, enter the directory and install the requirements with:
-pip install -r requirements.txt
+##Installation
+clone the Repo:
+>git clone https://github.com/Rostamborn/SlayTheLeader
 
-if you face an error regarding pygame, you need to install the library 
-in order to solve it:
-pip install pygame
-
-* How to play the game?
-simply go tothe directory in which you've cloned the repo and type:
-
-Linux/MacOs:
-python -m Boom
-
-Windows:
-py -m Boom
+##Running
+simply type this command in the terminal:
+>python -m SlayTheLeader
