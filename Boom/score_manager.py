@@ -2,11 +2,11 @@
     a class that manages the score system of the game
 '''
 import pygame
-from Boom.src.constants import SCORE_INCREASE, SCORE_DECREASE
+from Boom.constants import SCORE_INCREASE, SCORE_DECREASE, SCREEN_SIZE, STATUSBAR_SIZE
 
 
 class ScoreManager():
-    def __init__(self, x: int = 10, y: int = 710) -> None:
+    def __init__(self, x: int = 10, y: int = SCREEN_SIZE[1] - STATUSBAR_SIZE[1] + 10) -> None:
         self.score = 0
         self.screen = pygame.display.get_surface()
         self.x, self.y = x, y

@@ -1,4 +1,4 @@
-from Boom.src.constants import TARGET_SPAWN
+from Boom.constants import TARGET_SPAWN
 from random import choice
 
 

@@ -2,8 +2,8 @@
     controls the program flow
 '''
 import pygame
-from Boom.src.target import Target
-from Boom.src.constants import SCREEN_SIZE
+from Boom.target import Target
+from Boom.constants import SCREEN_SIZE, STATUSBAR_SIZE
 
 
 class ProgramController():
@@ -21,17 +21,18 @@ class ProgramController():
         self.message_rect = self.message_su.get_rect(
             center=(SCREEN_SIZE[0]//2, 425))
 
-        game_background_pic = pygame.image.load('Boom/assets/background.jpg')
+        game_background_pic = pygame.image.load('assets/background_iran.jpg')
         self.game_background = pygame.transform.scale(
-            game_background_pic, (500, 700))
+            game_background_pic, (SCREEN_SIZE[0], SCREEN_SIZE[1]-STATUSBAR_SIZE[1]))
 
         gameover_background_pic = pygame.image.load(
-            'Boom/assets/gameover_background.jpg')
+            'assets/gameover_background.jpg')
         self.gameover_background = pygame.transform.scale(
             gameover_background_pic, SCREEN_SIZE)
 
-        status_bar_pic = pygame.image.load('Boom/assets/status_bar.jpg')
-        self.status_bar = pygame.transform.scale(status_bar_pic, (500, 50))
+        status_bar_pic = pygame.image.load('assets/status_bar.jpg')
+        # self.status_bar = pygame.transform.scale(status_bar_pic, (500, 50))
+        self.status_bar = pygame.transform.scale(status_bar_pic, STATUSBAR_SIZE)
 
         # Groups
         self.target_group = pygame.sprite.Group()
@@ -59,7 +60,7 @@ class ProgramController():
     # main game meterial in the main loop
     def run_game(self) -> None:
         self.screen.blit(self.game_background, (0, 0))
-        self.screen.blit(self.status_bar, (0, 700))
+        self.screen.blit(self.status_bar, (0, SCREEN_SIZE[1] - STATUSBAR_SIZE[1]))
         self.target_group.draw(self.screen)
         self.target_group.update()
         self.game_timer.draw(self.screen)
@@ -68,7 +69,7 @@ class ProgramController():
         self.sign_group.update()
 
         if self.score is not None:
-            self.score.set_pos((10, 710))
+            self.score.set_pos((10, SCREEN_SIZE[1] - STATUSBAR_SIZE[1] + 10))
             self.score.show()
             if self.score.get_score() < 0 or self.game_timer.sprite.get_time() <= 0:
                 self.set_state('gameover')

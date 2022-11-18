@@ -4,16 +4,18 @@
 '''
 
 import pygame
-
+from Boom.constants import STATUSBAR_SIZE, SCREEN_SIZE
 
 class GameTimer(pygame.sprite.Sprite):
     def __init__(self, time=60) -> None:
         super().__init__()
 
+        x, y = SCREEN_SIZE[0] - 180, SCREEN_SIZE[1] - STATUSBAR_SIZE[1] + 10
+
         self.time = time
         self.font = pygame.font.Font(None, 60)
         self.image = self.font.render(f"Time: {self.time}", False, 'Black')
-        self.rect = self.image.get_rect(topleft=(320, 710))
+        self.rect = self.image.get_rect(topleft=(x, y))
 
     def tick(self):
         self.time -= 1

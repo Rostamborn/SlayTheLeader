@@ -4,7 +4,7 @@
 '''
 
 import pygame
-from Boom.src.constants import SIGN_SIZE, SIGN_SELF_DESTRUCTION
+from Boom.constants import SIGN_SIZE, SIGN_SELF_DESTRUCTION
 
 
 class Sign(pygame.sprite.Sprite):
@@ -13,9 +13,9 @@ class Sign(pygame.sprite.Sprite):
 
         self.pos = pos
         self.spawn_time = spawn_time
-        one_pic = pygame.image.load('Boom/assets/one.png')
+        one_pic = pygame.image.load('assets/one.png')
         one = pygame.transform.scale(one_pic, SIGN_SIZE)
-        two_pic = pygame.image.load('Boom/assets/two.png')
+        two_pic = pygame.image.load('assets/two.png')
         two = pygame.transform.scale(two_pic, SIGN_SIZE)
         if type == 'one':
             self.image = one

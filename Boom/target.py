@@ -3,9 +3,9 @@
 '''
 
 import pygame
-from Boom.src.constants import TARGET_SIZE
-from Boom.src.constants import SELF_DESTRUCTION
-from Boom.src.signs import Sign
+from Boom.constants import TARGET_SIZE
+from Boom.constants import SELF_DESTRUCTION
+from Boom.signs import Sign
 
 
 class Target(pygame.sprite.Sprite):
@@ -14,7 +14,7 @@ class Target(pygame.sprite.Sprite):
 
         self.sign_event = pygame.event.Event(pygame.USEREVENT + 3)
         target_surface = pygame.image.load(
-            'Boom/assets/target.png').convert_alpha()
+            'assets/khamenei.png').convert_alpha()
         target = pygame.transform.scale(target_surface, TARGET_SIZE)
 
         self.pos = pos
@@ -24,7 +24,7 @@ class Target(pygame.sprite.Sprite):
         self.score = score
         self.sign_group = sign_group
 
-        self.kill_sound = pygame.mixer.Sound('Boom/assets/kill_sound.mp3')
+        self.kill_sound = pygame.mixer.Sound('assets/kill_sound.mp3')
 
     # target gets destroyed after clicking on it.
     # meaning: detecting collision with the target sprtie

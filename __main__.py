@@ -1,12 +1,12 @@
 import pygame
 from sys import exit
-from Boom.src.controller import ProgramController
-from Boom.src.constants import FPS, SPAWN_TIME
-from Boom.src.target import Target
-from Boom.src.spawn import spawn_target
-from Boom.src.score_manager import ScoreManager
-from Boom.src.constants import SCREEN_SIZE
-from Boom.src.timer_sprite import GameTimer
+from Boom.controller import ProgramController
+from Boom.constants import FPS, SPAWN_TIME
+from Boom.target import Target
+from Boom.spawn import spawn_target
+from Boom.score_manager import ScoreManager
+from Boom.constants import SCREEN_SIZE
+from Boom.timer_sprite import GameTimer
 
 
 def main_loop() -> None:
