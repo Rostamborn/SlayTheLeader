@@ -4,7 +4,7 @@
 '''
 
 import pygame
-from Boom.constants import SIGN_SIZE, SIGN_SELF_DESTRUCTION
+from SlayTheLeader.constants import SIGN_SIZE, SIGN_SELF_DESTRUCTION
 
 
 class Sign(pygame.sprite.Sprite):

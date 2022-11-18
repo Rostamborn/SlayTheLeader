@@ -1,12 +1,12 @@
 import pygame
 from sys import exit
-from Boom.controller import ProgramController
-from Boom.constants import FPS, SPAWN_TIME
-from Boom.target import Target
-from Boom.spawn import spawn_target
-from Boom.score_manager import ScoreManager
-from Boom.constants import SCREEN_SIZE
-from Boom.timer_sprite import GameTimer
+from SlayTheLeader.controller import ProgramController
+from SlayTheLeader.constants import FPS, SPAWN_TIME
+from SlayTheLeader.target import Target
+from SlayTheLeader.spawn import spawn_target
+from SlayTheLeader.score_manager import ScoreManager
+from SlayTheLeader.constants import SCREEN_SIZE
+from SlayTheLeader.timer_sprite import GameTimer
 
 
 def main_loop() -> None:

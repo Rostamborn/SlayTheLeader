@@ -2,7 +2,7 @@
     a class that manages the score system of the game
 '''
 import pygame
-from Boom.constants import SCORE_INCREASE, SCORE_DECREASE, SCREEN_SIZE, STATUSBAR_SIZE
+from SlayTheLeader.constants import SCORE_INCREASE, SCORE_DECREASE, SCREEN_SIZE, STATUSBAR_SIZE
 
 
 class ScoreManager():

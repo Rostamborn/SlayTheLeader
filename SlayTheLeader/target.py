@@ -3,9 +3,9 @@
 '''
 
 import pygame
-from Boom.constants import TARGET_SIZE
-from Boom.constants import SELF_DESTRUCTION
-from Boom.signs import Sign
+from SlayTheLeader.constants import TARGET_SIZE
+from SlayTheLeader.constants import SELF_DESTRUCTION
+from SlayTheLeader.signs import Sign
 
 
 class Target(pygame.sprite.Sprite):

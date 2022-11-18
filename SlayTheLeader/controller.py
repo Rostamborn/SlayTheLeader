@@ -2,8 +2,8 @@
     controls the program flow
 '''
 import pygame
-from Boom.target import Target
-from Boom.constants import SCREEN_SIZE, STATUSBAR_SIZE
+from SlayTheLeader.target import Target
+from SlayTheLeader.constants import SCREEN_SIZE, STATUSBAR_SIZE
 
 
 class ProgramController():

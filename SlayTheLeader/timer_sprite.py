@@ -4,7 +4,7 @@
 '''
 
 import pygame
-from Boom.constants import STATUSBAR_SIZE, SCREEN_SIZE
+from SlayTheLeader.constants import STATUSBAR_SIZE, SCREEN_SIZE
 
 class GameTimer(pygame.sprite.Sprite):
     def __init__(self, time=60) -> None:

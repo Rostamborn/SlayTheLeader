@@ -3,7 +3,7 @@
     accessed throughout the program
 '''
 
-SCREEN_SIZE = (600, 750)
+SCREEN_SIZE = (550, 750)
 STATUSBAR_SIZE = (SCREEN_SIZE[0], SCREEN_SIZE[1]//15)
 FPS = 60
 GAME_NAME = 'Boom'

@@ -1,4 +1,4 @@
-from Boom.constants import TARGET_SPAWN
+from SlayTheLeader.constants import TARGET_SPAWN
 from random import choice
 
 
