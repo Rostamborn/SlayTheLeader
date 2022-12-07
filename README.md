@@ -4,12 +4,9 @@
 this is a game about clicking and destroying targets with 
 your mouse!
 
-## Installation
+### Installation
+you need to install the **pygame** module first.  
+> pip install pygame
 
-clone the Repo:
->git clone https://github.com/Rostamborn/SlayTheLeader
-
-## Running
-
-simply type this command in the terminal:
+then clone  the reopsitory and type:
 >python -m SlayTheLeader
