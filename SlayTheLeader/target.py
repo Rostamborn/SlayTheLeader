@@ -14,7 +14,7 @@ class Target(pygame.sprite.Sprite):
 
         self.sign_event = pygame.event.Event(pygame.USEREVENT + 3)
         target_surface = pygame.image.load(
-            'assets/khamenei.png').convert_alpha()
+            'assets/target.jpeg').convert_alpha()
         target = pygame.transform.scale(target_surface, TARGET_SIZE)
 
         self.pos = pos

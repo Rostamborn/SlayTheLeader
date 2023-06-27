@@ -21,7 +21,7 @@ class ProgramController():
         self.message_rect = self.message_su.get_rect(
             center=(SCREEN_SIZE[0]//2, 425))
 
-        game_background_pic = pygame.image.load('assets/background_iran.jpg')
+        game_background_pic = pygame.image.load('assets/background.jpeg')
         self.game_background = pygame.transform.scale(
             game_background_pic, (SCREEN_SIZE[0], SCREEN_SIZE[1]-STATUSBAR_SIZE[1]))
 
